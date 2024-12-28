@@ -1,0 +1,6 @@
+.catalogue-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Optional, to limit the size of images */
+}
+

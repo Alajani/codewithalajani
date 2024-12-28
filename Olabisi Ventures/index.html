@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Ola Timi Ltd</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding-top: 70px; /* to avoid header overlap */
+        }
+        header {
+            background-color: #001f3f;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        header h1 {
+            margin: 0;
+            animation: moveText 30s linear infinite;
+            white-space: nowrap;
+        }
+        header h2 {
+            margin: 0;
+            animation: moveText 30s linear infinite;
+            white-space: nowrap;
+        }
+        @keyframes moveText {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .catalogue-item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+        }
+        .catalogue-item img {
+            width: 100%;
+            height: auto;
+        }
+        .catalogue-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .social-links {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+        }
+        footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .catalogue {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <img src="olabisii.jpg" alt="Olabisi Ventures Logo" class="logo">
+        <h2>Welcome to Isaac Ola Timi Ltd <br>Shop 5&6 Ibiyo Plaza, Tippa Garage, Offa </h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
+
+    <!-- Add this wherever you want the button to appear -->
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="window.location.href='price-estimator.html'" 
+        style="padding: 10px 20px; 
+               font-size: 16px; 
+               background-color: #001f3f; 
+               color: white; 
+               border: none; 
+               border-radius: 5px; 
+               cursor: pointer;">
+        Go to Price Estimator
+    </button>
+</div>
+
+
+    <div class="container">
+        <h2>Our Catalogue</h2>
+        <div class="catalogue">
+            <div class="catalogue-item">
+                <a href="product-page-11promax.html" class="catalogue-item">
+                <img src="11promax.jpeg" alt="iPhone 11 Pro Max">
+                <h3>iPhone 11 Pro Max</h3>
+                <p>#520,000</p>
+            </a>
+            </div>
+            <div class="catalogue-item">
+                <img src="iphone 12.jpeg" alt="iPhone 12">
+                <h3>iPhone 12</h3>
+                <p>#480,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="12pro.jpeg" alt="iPhone 12 Pro">
+                <h3>iPhone 12 Pro</h3>
+                <p>#600,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="12promax.jpeg" alt="iPhone 12 Pro Max">
+                <h3>iPhone 12 Pro Max</h3>
+                <p>#720,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="13.jpeg" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p>#680,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="13pro.jpeg" alt="iPhone 13 Pro">
+                <h3>iPhone 13 Pro</h3>
+                <p>#770,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="13promax.jpeg" alt="iPhone 13 Pro Max">
+                <h3>iPhone 13 Pro Max</h3>
+                <p>#870,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="14.jpeg" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p>#820,000</p> <!-- Assuming price -->
+            </div>
+            <div class="catalogue-item">
+                <img src="14pro.jpeg" alt="iPhone 14 Pro">
+                <h3>iPhone 14 Pro</h3>
+                <p>$429</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="14promax.jpeg" alt="iPhone 14 Pro Max">
+                <h3>iPhone 14 Pro Max</h3>
+                <p>$429</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="15.jpeg" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p>#950,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="15pro.jpeg" alt="iPhone 15 Pro">
+                <h3>iPhone 15 Pro</h3>
+                <p>#1,050,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="15promax.jpeg" alt="iPhone 15 Pro Max">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>#1,200,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="16.jpeg" alt="iPhone 16">
+                <h3>iPhone 16</h3>
+                <p>#1,350,000</p>
+            </div>
+            <div class="catalogue-item">
+                <img src="16pro.jpeg" alt="iPhone 16 Pro">
+                <h3>iPhone 16 Pro</h3>
+                <p>#1,400,000</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h2>Follow Us on Social Media</h2>
+            <p>Stay connected and up-to-date with our latest offerings.</p>
+            <a href="https://www.facebook.com/share/1Avw7au8uG/?mibextid=wwXIfr" target="_blank">
+                <img src="facebook.jpeg" alt="Facebook">
+            </a>
+            <a href="https://x.com/yourprofile" target="_blank">
+                <img src="x.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/olabisi_ventures/profilecard/?igsh=MWI3NWYyZjhib3NmNg==" target="_blank">
+                <img src="instagram.jpeg" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com/@yourpro" target="_blank">
+                <img src="tiktok.png" alt="TikTok">
+            </a>
+            <a href="http://wa.me/2349031568225" target="_blank">
+                <img src="whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+
+        <div id="about">
+            <h2>About Us</h2>
+            <p>Isaac Ola Timi Ltd is a leading supplier of high-quality mobile devices, providing a range of iPhones and accessories to cater to your needs. Our goal is to ensure that every customer has access to the best mobile technology.</p>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries or support, please reach out to us at:</p>
+            <p>Email: info@isaacolatimiltd.com</p>
+            <p>Phone: +234 903 156 8225</p>
+        </div>
+
+        <div id="delivery">
+            <h2>Delivery Information</h2>
+            <p>We offer reliable and fast delivery services within Nigeria and globally. Deliveries are typically completed within 5-7 working days. Please contact our support team for more information on shipping options.</p>
+        </div>
+
+        <div id="support">
+            <h2>Support</h2>
+            <p>If you have any issues or need assistance with your products, our customer support team is here to help. Feel free to reach out to us via email or our social media channels.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#support">Support</a>
+        </div>
+        <p>&copy; 2024 Isaac Ola Timi Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
