@@ -179,11 +179,11 @@
             <option value="No Face ID">No Face ID</option>
             <option value="Cracked Screen">Cracked Screen</option>
             <option value="IDM">IDM</option>
-            <option value="poor">Poor</option>
-            <option value="poor">Poor</option>
-            <option value="poor">Poor</option>
-            <option value="poor">Poor</option>
-            <option value="poor">Poor</option>
+            <option value="NFID+Cracked Screen">NFID+Cracked Screen</option>
+            <option value="Service Battery">Service Battery</option>
+            <option value="Poor Battery Health">Poor Battery Health</option>
+            <option value="Camera Issue">Camera Issue</option>
+            <option value="IDM+Service Battery Health">IDM+Service Battery Health</option>
         </select>
 
         <button type="button" onclick="calculatePrice()">Estimate Price</button>
@@ -229,14 +229,15 @@
 
             // Adjust price based on condition
             let finalPrice = basePrice;
-            if (condition === "excellent") finalPrice *= 0.75;
-            else if (condition === "No Face ID") finalPrice *= 0.6;
+            if (condition === "Excellent") finalPrice *= 0.75;
+            else if (condition === "No Face ID") finalPrice *= 0.48;
             else if (condition === "Cracked Screen") finalPrice *= 0.6;
-            else if (condition === "IDM") finalPrice *= 0.4;
-            else if (condition === "IDM") finalPrice *= 0.4;
-            else if (condition === "IDM") finalPrice *= 0.4;
-            else if (condition === "IDM") finalPrice *= 0.4;
-            else if (condition === "IDM") finalPrice *= 0.4;
+            else if (condition === "IDM") finalPrice *= 0.6;
+            else if (condition === "NFID+Cracked Screen") finalPrice *= 0.3;
+            else if (condition === "Serice Battery") finalPrice *= 0.71;
+            else if (condition === "Poor Battery Health") finalPrice *= 0.7;
+            else if (condition === "Camera Issue") finalPrice *= 0.6;
+            else if (condition === "IDM+Service Battery Health") finalPrice *= 0.5;
 
             // Display result
             const result = document.getElementById('result');
